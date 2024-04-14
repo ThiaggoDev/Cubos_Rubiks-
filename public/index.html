@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>santiago</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./logo/7ddmx0dnd8c11.png" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <div class="loader-wrapper" id="loader">
+            Cargando...
+        </div>
+        <header>
+            <section class="section_1">
+                <div class="div_2">
+                    <nav class="menu">
+                        <ul>
+                            <li><a href="cubo">Cubos Rubiks</a>
+                                <ul class="submenu">
+                                    <li><a href="#cubo">Cubo 3x3</a>
+                                        <ul class="submenu_2">
+                                            <li><a href="#algoritmos_1">Aristas centrales</a></li>
+                                            <li><a href="#algoritmos_2">Cruz amarilla</a></li>
+                                            <li><a href="#algoritmos_3">Aristas superiores</a></li>
+                                            <li><a href="#algoritmos_4">Esquinas superiores</a></li>
+                                            <li><a href="#algoritmos_5">Permutar esquinas</a></li>
+                                            <li><a href="#algoritmos_6">Video tutorial</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#cubo_2">Cubo 4x4</a>
+                                        <ul class="submenu_2">
+                                            <li><a href="#algoritmos_11">Cara amarilla</a></li>
+                                            <li><a href="#algoritmos_12">Aristas</a></li>
+                                            <li><a href="#algoritmos_13">Ultimas dos aristas</a></li>
+                                            <li><a href="#algoritmos_14">Video tutorial</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#cubo_1">Cubo 5x5</a>
+                                        <ul class="submenu_2">
+                                            <li><a href="#algoritmos_7">Cara amarilla</a></li>
+                                            <li><a href="#algoritmos_8">Aristas</a></li>
+                                            <li><a href="#algoritmos_9">Ultimas dos aristas</a></li>
+                                            <li><a href="#algoritmos_10">Video tutorial</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>                    
+                </div>
+            </section>
+        </header>
+        <section class="section_2">
+            <main class="main_1">
+                <h1>información de esta serie de tutoriales</h1>
+                <h7><br>
+                    ¡Bienvenido a esta página! Está diseñada con un propósito especial: recordar algunas cosas importantes para mí. Aquí encontrarás información sobre diversos temas que considero fascinantes o importantes en mi vida. <br><br>
+                    
+                    <br>Una de las secciones destacadas es sobre los algoritmos del cubo Rubik. Este rompecabezas tridimensional es un desafío que nunca deja de cautivarme. Aquí puedo guardar mis algoritmos favoritos, esos movimientos ingeniosos que me permiten resolver el cubo de forma eficiente y rápida. Además, esta sección me sirve como referencia para practicar y mejorar mis habilidades en este divertido pasatiempo. <br><br>
+                </h7>
+            </main>
+            <nav  class="nav_1">
+                <div class="slider_box">
+                    <ul class="ul_6">
+                        <li class="li_6">
+                            <img class="img_1" src="./fotos/IMG_20240408_130010.jpg" alt="lego1">
+                        </li> 
+                        <li class="li_6">
+                            <img class="img_1" src="./fotos/IMG_20240408_130152.jpg" alt="lego2">
+                        </li>
+                        <li class="li_6">
+                            <img class="img_1" src="./fotos/IMG_20240408_130207.jpg" alt="lego3">
+                        </li>
+                        <li class="li_6">   
+                            <img class="img_1" src="./fotos/IMG_20240408_130219.jpg" alt="lego4">
+                        </li>
+                        <li class="li_6">
+                            <img class="img_1" src="./fotos/IMG_20240408_130243.jpg" alt="lego5">
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="zoom-container">
+                <span class="close-btn" onclick="closeZoom()">×</span>
+                <img id="zoomed-image" src="" alt="imagen ampliada">
+            </div>
+        </section>
+    </div>
+        <section class="section_3" id="cubo">
+            <h2>Cubo 3x3</h2>
+            <h3>Paso a paso Cubo Rubik 3x3</h3>
+            <h7>
+                <br>PASO 1: Cruz blanca <br> 
+                1. Coloca el cubo con la cara blanca hacia arriba. <br>
+                2. Observa los bordes de la capa superior (la capa con los colores centrados alrededor del centro blanco). <br>
+                3. Encuentra los bordes blancos y colócalos alrededor del centro blanco para formar una cruz blanca. <br>
+                <img src="./3x3/img_cubo3x3/cruz_B.png" alt="">
+                
+                <br>PASO 2: Completar la primera capa <br> 
+                1. Coloca las esquinas blancas en la capa superior para formar una "T" en cada esquina con el color correspondiente. <br>
+                2. Gira la capa superior para que coincidan las esquinas con los bordes de la cruz blanca formada en el paso anterior. <br>
+                3. Gira la capa superior y los laterales hasta que la primera capa esté completa con el color blanco en la parte superior y los colores correspondientes en los laterales. <br>
+                <img src="./3x3/img_cubo3x3/esquinas_cruz_B.png" alt="">
+                
+                <br>PASO 3: Segunda capa (F2L)<br> 
+                1. Encuentra una esquina de la segunda capa con dos colores adyacentes a la capa blanca. <br>
+                2. Encuentra el borde que corresponde a esa esquina. <br>
+                3. Posiciona la esquina de la segunda capa debajo de su borde correspondiente. <br>
+                4. Haz un algoritmo específico para insertar la esquina y el borde en la segunda capa. <br>
+                <img  id="algoritmos_1"src="./3x3/img_cubo3x3/aristas_Center.png" alt=""><br>
+                ALGORITMO: <br>
+                1. Coloca la cara blanca arriba <br>
+                2. coloca la arista correspondiente debajo de su centro. Por ejemplo: arista verde naranja se coloca debajo de su centro verde/naranja <br>
+                3.y realiza el siguiente algoritmo: <br>
+                <div>
+                    <img src="./3x3/img_cubo3x3_Alg/Algoritmo_aritas_center.png" alt="">
+                    <img src="./3x3/img_cubo3x3_Alg/primer paso.png" alt="">
+                    <img src="./3x3/img_cubo3x3_Alg/segundo paso.png" alt="">
+                    <img src="./3x3/img_cubo3x3_Alg/tercer paso.png" alt="">
+                    <img src="./3x3/img_cubo3x3_Alg/cuarto paso.png" alt="">
+                    <img src="./3x3/img_cubo3x3_Alg/5 paso.png" alt="">
+                    <img src="./3x3/img_cubo3x3_Alg/6 paso.png" alt="">
+                    <img src="./3x3/img_cubo3x3_Alg/7 paso.png" alt="">
+                    <img src="./3x3/img_cubo3x3_Alg/8 paso.png" alt="">
+                </div>
+                <br>
+                
+                <br>PASO 4: Cruz amarilla <br> 
+                1. Coloca el cubo con la capa blanca hacia abajo. <br>
+                2. Encuentra los bordes amarillos de la capa superior. <br>
+                3. Gira los laterales para formar una cruz amarilla en la capa inferior con el seguiente algoritmo: <br>
+                <img id="algoritmos_2" src="./3x3/img_cubo3x3/cruz_A.png" alt=""><br>
+                ALGORITMO: <br>
+                1. Para la cruz amarilla se deben seguir cierto patrones por ejemplo: <br>
+                *si empizas con solo el centro debes hacer el algoritmo por cualquier parte. <br>
+                *si empiezas por una v debes hacer el algoritmo por donde no se toca la v. <br>
+                *si empiezas por un palito debes hacer el algoritmo por el lado donde no se toca el palito.
+                2. Repite el algoritmo hasta que te de la cruz amarilla <br>
+                <div>
+                    <img src="./3x3/img_cubo3x3_alg2/1 paso.png" alt="">
+                    <img src="./3x3/img_cubo3x3_alg2/2paso.png" alt="">
+                    <img src="./3x3/img_cubo3x3_alg2/3paso.png" alt="">
+                    <img src="./3x3/img_cubo3x3_alg2/4paso.png" alt="">
+                    <img src="./3x3/img_cubo3x3_alg2/5 paso.png" alt="">
+                    <img src="./3x3/img_cubo3x3_alg2/6paso.png" alt="">
+                    <img src="./3x3/img_cubo3x3_alg2/7 paso.png" alt="">
+                </div><br>
+                
+                <br>PASO 5: Colocar bien las aristas amarillas <br> 
+                1. Encuentra dos o ninguna, aristas que cuadre con su color y gira el cubo para que una quede frontal y la otra ala derecha para realizar el algoritmo.<br>
+                <img id="algoritmos_3" src="./3x3/img_cubo3x3/aristas_A.png" alt=""><br>
+                ALGORITMO: <br>
+                1. en el paso 6 pone 2x significa que se tiene que dar la vuelta 180° <br>
+                <div>
+
+                </div>
+                    <img src="./3x3/img_cubo3x3_alg3/2 paso.png" alt="">
+                    <img src="./3x3/img_cubo3x3_alg3/4 paso.png" alt="">
+                    <img src="./3x3/img_cubo3x3_alg3/3 paso.png" alt="">
+                    <img src="./3x3/img_cubo3x3_alg3/4 paso.png" alt="">
+                    <img src="./3x3/img_cubo3x3_alg3/2 paso.png" alt="">
+                    <img src="./3x3/img_cubo3x3_alg3/6 paso.png" alt="">
+                    <img src="./3x3/img_cubo3x3_alg3/7 paso.png" alt="">
+                    <img src="./3x3/img_cubo3x3_alg3/4 paso.png" alt="">
+                    <img src="./3x3/img_cubo3x3_alg3/1 paso.png" alt="">
+                <br>
+
+                <br>PASO 6: Orientar esquinas amarillas<br> 
+                1. Gira la capa inferior hasta que todas las esquinas amarillas estén orientadas correctamente. <br>
+                <img id="algoritmos_4" src="./3x3/img_cubo3x3/esquinas_.png" alt=""> <br>
+                ALGORITMO: <br>
+                1. Ten encuenta que en la esquina que hagas el algoritmo no cambiara con las demas, utilisalo a tu favor <br>
+                <div>
+                    <img src="./3x3/img_cubo3x3_alg4/1 paso.png" alt="">
+                    <img src="./3x3/img_cubo3x3_alg4/2 paso.png" alt="">
+                    <img src="./3x3/img_cubo3x3_alg4/3 paso.png" alt="">
+                    <img src="./3x3/img_cubo3x3_alg4/4 paso.png" alt="">
+                    <img src="./3x3/img_cubo3x3_alg4/5 paso.png" alt="">
+                    <img src="./3x3/img_cubo3x3_alg4/6 paso.png" alt="">
+                    <img src="./3x3/img_cubo3x3_alg4/7 paso.png" alt="">
+                    <img src="./3x3/img_cubo3x3_alg4/8 paso.png" alt="">
+                    <img src="./3x3/img_cubo3x3_alg4/9 paso.png" alt="">
+                </div><br>
+                
+                <br>PASO 7: Permutar las esquinas<br> 
+                1. Aplica un algoritmo específico para permutar las esquinas amarillas hasta que todas estén en su lugar correcto. <br>
+                <img id="algoritmos_5" src="./3x3/img_cubo3x3/esquinas_A.png" alt=""> <br>
+                ALGORITMO: <br>
+                1. Este algoritmo se repite lo nesesario para que la esquina rote a su pocicion perfecta <br>
+                2. al terminar una esquina se tiene que pasar por la otra hasta que todas esten es su estado perfecto <br>
+                <div>
+                    <img src="./3x3/img_cubo3x3_alg5/1 paso.png" alt="">
+                    <img src="./3x3/img_cubo3x3_alg5/2 paso.png" alt="">
+                    <img src="./3x3/img_cubo3x3_alg5/3 paso.png" alt="">
+                    <img src="./3x3/img_cubo3x3_alg5/4 paso.png" alt="">
+                </div> <br>
+                
+                <br id="algoritmos_6">Estos son los siete pasos básicos para resolver el cubo Rubik utilizando el método principiante. Recuerda que la práctica es clave para mejorar tu velocidad y eficiencia en la resolución del cubo. ¡Buena suerte y que te diviertas resolviendo! <br>
+
+                <br>Si por algún caso te resulta dificil la guia, aqui tienes un video tutorial: <br>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/p-Xs1Xe6gZc?si=-LwY6mNhqIm32kMR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </h7>
+        </section>
+        <section class="section_3" id="cubo_2">
+            <h2>cubo 4x4</h2>
+            <h3>paso a paso cubo rubik 4x4</h3>
+            <h7>
+                <br>Requisitos: <br>
+                * Tiene que saber aramar el cubo 3x3 <br>
+                * Tener una buena logica al armar caras, aristas y esquinas <br>
+                <br>Paso 1: Cara blanca <br>
+                1. Colocar la cara blanca arriba (por comodidad) <br>
+                2. Crear un slindro de 2 esquinas <br id="algoritmos_11">
+                3. Al tener dos silindros, se deben insertar para formar la cara blanca <br>
+                <img style="width: 135px;" src="./4x4/principal/cruz_blanca.png" alt=""> <br>
+
+                <br>Paso 2: cara amarilla <br>
+                1. Se deben crear silindros de dos esquinas <br>
+                2. Al tener el silindro la creado se debe insertar y darle 180° a la capa amarilla y bajar el silindro blanco <br>
+                3. al tener el ultimo silindro se debe hacer el siguiente algoritmo: <br>
+                <img style="width: 135px;" src="./4x4/principal/cruz_amarilla.png" alt=""> <br>
+                ALGORITMO: <br>
+                <img src="" alt=""> <br>
+
+                <br>Paso 3: cara verde y rojo <br>
+                1. Haciendo lo mismo de crear silindros e insertar <br>
+                2. Al crear el color (verde o rojo) de debe tener encuenta del orden de color por ejemplo: <br>
+                * blanco arriba <br>
+                * amarillo abajo <br>
+                * debajo de blanco verde <br>
+                * al lado derecho del verde va rojo <br>
+                * al lado derecho del rojo va azul <br>
+                * y al lado derecho del azul va naranja <br> 
+                3. Teniendo encuenta el orden se debe crear el siguiente centro, <br> en mi caso el rojo el cual va a la derecha del verde <br>
+                4. Al  tener el ultimo silindro (rojo) se debe insertar con el mismo algoritmo del paso 2 <br>
+                <img style="width: 135px;" src="./4x4/principal/cruz_verd_roja.png" alt=""> <br>
+
+                <br>Paso 4: cara naranja y azul <br>
+                1. Se deben intercambiar los ultimos silindros para terminar las ultimas 2 caras <br>
+                2. Se debe hacer el mimos algoritmo del caso antepasado (el paso 2) <br>
+                3. Para saber si se colocaron bien los centros se puede saber con las esquinas, <br> si la esquina cuadra con los tres centros (es decir los tres centros que conectan esa esquina) <br> estaria bien echo. pero si no esta bien es porque los centros estan mal ubicados <br id="algoritmos_12">
+                <img style="width: 135px;" src="./4x4/principal/cruz_azu_nar.png" alt=""> <br>
+
+                <br>Paso 4: aristas <br>
+                1. Se debe ubicar una arista y luego su pareja<br>
+                2. Al tener ubicado la pareja se tiene que poner sentidos contrarios para que al subir esa capa se junte la pareja <br>
+                3. Se tiene que hacer el siguiente algoritmo para juntar la pareja de aristas <br>
+                <img style="width: 135px;" src="./4x4/principal/cruz_aristas.png" alt=""> <br id="algoritmos_13">
+                ALGORITMO: <br>
+                <img src="" alt="">
+
+                <br>Paso 5: ultimas 2 aristas <br>
+                * Este paso se puede saltar si se tiene suerte o un caso en especifico <br>
+                1. Al tener las dos ultimas aristas se debe hacer este algoritmo <br>
+                <img style="width: 135px;" src="./4x4/principal/cruz_aristas.png" alt=""> <br>
+                ALGORITMO: <br>
+                <img src="" alt="">
+
+                <br>Paso 6: 3x3 <br>
+                * En este paso literlamente el cubo se arma como si fuese un 3x3
+                * si por algun caso no sabe como se armar un 3x3 acá esta la guia o el video tutorial:
+                <a style="color: #333;" href="#cubo">Guia.</a>
+                <a style="color: #333;" href="#algoritmos_6">Video tutorial.</a> <br>
+                <img style="width: 135px;" src="./4x4/principal/cruz_esquinas.png" alt=""> <br>
+
+                <br>Caso 1, de paridades: <br>
+                * El caso es para la paridad de la arista (voltiada, alreves) <br>
+                1. Se debe ubicar la cara con la paridad hacia arriba (por comodidad y para hacer el algoritmo) <br>
+                2. Se debe realizar el algoritmo de las (dos ultimas dos ariastas) y se repite 3 veses. <br>
+                * La primera es para desubicar la arista <br>
+                * La segunda se debe voltear la aritas para que quede alineada a su otra arista <br>
+                * La tercera se debe voltear otra vez la arista para que quede contraria a su pareja <br>
+                EJEMPLO: <br>
+                <img style="width: 135px;" src="./4x4/principal/cruz_paridad1.png" alt=""> <br>
+
+                <br>Caso 2, de paridades: <br>
+                * El caso es para la paridad de 2 esquinas fuera de su lugar <br> (es decir la esquina del lado derecho esta en el izquierdo y en diseversa) <br>
+                * Se tiene que hacer el siguiente algoritmo <br>
+                EJEMPLO: <br>
+                <img style="width: 135px;" src="./4x4/principal/cruz_paridad2.png" alt=""> <br>
+                ALGORITMO: <br id="algoritmos_14">
+                <img src="" alt="">
+
+                <br>Si por algún caso te resulta dificil la guia, aqui tienes un video tutorial: <br>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/EiT4k01D1pM?si=Qo34rFvtCUCvs2Cu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </h7>
+        </section>
+        <section class="section_3" id="cubo_1">
+        <h2>Cubo 5x5</h2>
+        <h3>Paso a paso Cubo Rubik 5x5</h3>
+            <h7>
+                <br>Requisitos: <br>
+                * Tiene que saber armar el cubo 3x3 <br>
+                * Tener una buena logica al armar caras, aristas y esquinas <br>
+                <br>Paso 1: Cara blanca <br>
+                1. Colocar la cara blanca arriba (por comodidad) <br>
+                2. Crear la cara blanca por silindros de una esquina y una central <br>
+                3. El ultimo silindro debe ser de tres, dos esquinas y una central <br>
+                <img src="./5x5/principal/New Piskel (5).png" alt=""><br>
+                
+                <br>Paso 2: Cara amarilla <br>
+                1. Colocar la cara amarilla arriba <br>
+                2. Crear la cara amarilla por silindros de una esquina y una central, pero siempre recuperando el blanco para no perder lo ya echo <br>
+                3. el ultimo silindro, se debe Posicionar en la misma linea que otro silindro amarillo para cuando se haga el remplazo voltee la cara y asi resuperar <br>  
+                <img id="algoritmos_7" src="./5x5/principal/1 paso.png" alt=""><br>
+                ALGORITMO: <br>
+                <img src="./5x5/capa_amarilla/1 paso.png" alt="">
+                <img src="./5x5/capa_amarilla/2 paso.png" alt="">
+                <img src="./5x5/capa_amarilla/3 paso.png" alt="">
+                <img src="./5x5/capa_amarilla/4 paso.png" alt="">
+
+                <br>Paso 3: cara azul y roja<br>
+                1. hacer silindros y Completar la cara azul <br>
+                2. completar con el algoritmo anterior resolver la cara roja <br>
+                <img src="./5x5/principal/3 paso.png" alt=""> <br>
+
+                <br>Paso 4: cara verde y naranja <br>
+                1. Hacer intercambios hasta tener los ultimos 2 silindros de tres y hacer el mismo algoritmo de la cara blanca y amarilla <br>
+                <img src="./5x5/principal/6 paso.png" alt=""><br>
+
+                <br>Paso 5: aristas <br>
+                1. con el siguiente algoritmo se tiene que repetir hasta dejar las dos ultimas aristas (mi recomendacion es dejar las mas faciles tipo solo la/s aristas no cetrtales para no hacer un algoritmo aún mas largo) <br>
+                <img id="algoritmos_8" src="./5x5/principal/9 paso.png" alt=""><br>
+                ALGORITMO: <br>
+                1. Se tiene que hacer de acuerdo al lado que este la pieza en mi caso sera la derecha pero puede ser la izquiera o la mitad <br>
+                2. Al ejecutar el algoritmo se destruira la arista que esta a la derecha/izquierda de la arista que completamos (por eso solo quedan 2 sin resolver) <br>
+                <div>
+                    <img src="./5x5/aristas/1 paso.png" alt="">
+                    <img src="./5x5/aristas/2 paso.png" alt="">
+                    <img src="./5x5/aristas/3 paso.png" alt="">
+                    <img src="./5x5/aristas/4 paso.png" alt="">
+                    <img src="./5x5/aristas/5 paso.png" alt="">
+                    <img src="./5x5/aristas/7 caso.png" alt="">
+                </div> <br>
+
+                <br>Paso 6: ultimas 2 aristas <br>
+                1. se tiene que hacer el seguiente algoritmo <br>
+                <img id="algoritmos_9" src="./5x5/principal/9 paso.png" alt=""> <br>
+                ALGORITMO: <br>
+                <div>
+                    <img src="./5x5/ultimas_A/1 paso.png" alt="">
+                    <img src="./5x5/ultimas_A/2 paso.png" alt="">
+                    <img src="./5x5/ultimas_A/3 paso.png" alt="">
+                    <img src="./5x5/ultimas_A/4 paso.png" alt="">
+                    <img src="./5x5/ultimas_A/ex paso 5.png" alt="">
+                    <img src="./5x5/ultimas_A/5 paso.png" alt="">
+                    <img src="./5x5/ultimas_A/6 paso.png" alt="">
+                    <img src="./5x5/ultimas_A/7 paso.png" alt="">
+                    <img src="./5x5/ultimas_A/8 paso.png" alt="">
+                    <img src="./5x5/ultimas_A/9 paso.png" alt="">
+                    <img src="./5x5/ultimas_A/10 paso.png" alt="">
+                    <img src="./5x5/ultimas_A/11 paso.png" alt="">
+                    <img src="./5x5/ultimas_A/12 paso.png" alt="">
+                </div> <br>
+                
+                <br id="algoritmos_10">Paso 7: 3x3 <br>
+                1. el ultimo paso es literlamente como si fuese un 3x3 pero con las capas exteriores
+                para no arruinar lo que hemos conseguido solo se deben coger las capas exterioes no las interiores <br>
+                * si por algun caso no sabe como se armar un 3x3 acá esta la guia o el video tutorial:
+                <a style="color: #333;" href="#cubo">Guia.</a>
+                <a style="color: #333;" href="#algoritmos_6">Video tutorial.</a>
+
+                <br>Si por algún caso te resulta dificil la guia, aqui tienes un video tutorial: <br>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/r80cmSaWaSg?si=X9b2q0xLTFdaAx_T" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </h7>
+        <footer class="footer">
+            <div class="footer-content">
+                <p>&copy; Skölays 2024 - Todos los derechos reservados</p>
+                <p>Contacto: info@skolays.com</p>
+                <p>Teléfono: (+54) 320 5432133</p>
+                <p>Síguenos en las redes sociales:</p>
+                <ul class="social-links">
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Instagram</a></li>
+                </ul>
+            </div>
+        </footer>
+        
+    <script src="./js/js.js"></script>
+</body>
+</html>
